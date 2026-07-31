@@ -365,3 +365,88 @@ button:active{
     border-radius: 20px;
     box-shadow: none;
 }
+/* ===== Romantic Gallery ===== */
+
+.gallery-card{
+    position:relative;
+    overflow:hidden;
+}
+
+/* Decorations */
+.gallery-card::before{
+    content:"🌸";
+    position:absolute;
+    top:20px;
+    left:20px;
+    font-size:40px;
+    animation:floatFlower 6s ease-in-out infinite;
+}
+
+.gallery-card::after{
+    content:"🦋";
+    position:absolute;
+    top:60px;
+    right:25px;
+    font-size:34px;
+    animation:flyButterfly 8s ease-in-out infinite;
+}
+
+/* Floating sparkles */
+.gallery-card .sparkle{
+    position:absolute;
+    font-size:22px;
+    animation:twinkle 3s infinite;
+    opacity:.8;
+}
+
+@keyframes floatFlower{
+    0%,100%{transform:translateY(0) rotate(0deg);}
+    50%{transform:translateY(-12px) rotate(10deg);}
+}
+
+@keyframes flyButterfly{
+    0%,100%{transform:translate(0,0);}
+    50%{transform:translate(-20px,15px);}
+}
+
+@keyframes twinkle{
+    0%,100%{opacity:.2;transform:scale(.8);}
+    50%{opacity:1;transform:scale(1.3);}
+}
+
+/* Photo Cards */
+.photo-card{
+    position:relative;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(10px);
+    border-radius:22px;
+    padding:15px;
+    box-shadow:0 15px 35px rgba(255,105,180,.18);
+}
+
+/* Cute tape */
+.photo-card::before,
+.photo-card::after{
+    content:"";
+    position:absolute;
+    width:70px;
+    height:18px;
+    background:rgba(255,230,240,.75);
+    border-radius:4px;
+}
+
+.photo-card::before{
+    top:-8px;
+    left:20px;
+    transform:rotate(-12deg);
+}
+
+.photo-card::after{
+    top:-8px;
+    right:20px;
+    transform:rotate(12deg);
+}
+
+.photo-card img{
+    border-radius:18px;
+}
