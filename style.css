@@ -6,7 +6,8 @@
 }
 
 body{
-    background:linear-gradient(135deg,#ffd6e7,#ffeef6);
+    background: url("background.jpg") no-repeat center center fixed;
+    background-size: cover;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -18,7 +19,7 @@ body{
 /* Welcome Card */
 
 .welcome{
-    background:rgba(255,255,255,.88);
+    background:rgba(255,255,255,.95);
     backdrop-filter:blur(10px);
     border:1px solid rgba(255,255,255,.6);
     width:90%;
