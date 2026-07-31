@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Buggu ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Floating Hearts -->
+    <div class="floating-hearts">
+        <span>❤️</span>
+        <span>💖</span>
+        <span>💕</span>
+        <span>💗</span>
+        <span>💓</span>
+        <span>💞</span>
+        <span>🌸</span>
+        <span>✨</span>
+    </div>
+
+    <!-- Password Screen -->
+    <div id="passwordScreen">
+        <div class="password-box">
+            <h1>🔒 Secret Surprise</h1>
+
+            <p>Enter our special date ❤️</p>
+
+            <input
+                type="password"
+                id="passwordInput"
+                placeholder="DDMMYYYY"
+            >
+
+            <button onclick="checkPassword()">
+                Unlock ❤️
+            </button>
+
+            <p id="error"></p>
+        </div>
+    </div>
+
+    <!-- Welcome Page -->
+    <div class="welcome" id="mainContent" style="display:none;">
+
+        <div class="heart">❤️</div>
+
+        <h1>Hi Buggu 💖</h1>
+
+        <p>
+            A little surprise made with love by your
+            <br>
+            <b>Munmun ❤️</b>
+        </p>
+
+        <button id="startBtn">
+            Open My Heart 💌
+        </button>
+
+    </div>
+
+    <!-- Love Letter -->
+    <div id="letterPage" class="welcome" style="display:none;">
+
+        <h1>💌 My Letter For You 💖</h1>
+
+        <p>
+            Dear Buggu ❤️,
+            <br><br>
+
+            You are the most beautiful part of my life.
+            Every smile of yours makes my day brighter.
+            Thank you for staying beside me through everything.
+            I love you so much.
+
+            <br><br>
+
+            Forever yours,
+            <br>
+
+            <b>Munmun ❤️</b>
+        </p>
+
+        <button id="nextBtn">
+            Next Surprise 🎁
+        </button>
+
+    </div>
+
+<!-- Gallery -->
+<div id="galleryPage" class="welcome" style="display:none;">
+
+    <h1>📸 Our Memories ❤️</h1>
+
+    <div class="gallery-grid">
+
+        <div class="photo-card left">
+            <img src="images/photo1.jpg" alt="">
+        </div>
+
+        <div class="photo-card right">
+            <img src="images/photo2.jpg" alt="">
+        </div>
+
+        <div class="photo-card zoom">
+            <img src="images/photo3.jpg" alt="">
+        </div>
+
+        <div class="photo-card rotate">
+            <img src="images/photo4.jpg" alt="">
+        </div>
+
+        <div class="photo-card left">
+            <img src="images/photo5.jpg" alt="">
+        </div>
+
+        <div class="photo-card right">
+            <img src="images/photo6.jpg" alt="">
+        </div>
+
+        <div class="photo-card zoom">
+            <img src="images/photo7.jpg" alt="">
+        </div>
+
+        <div class="photo-card rotate">
+            <img src="images/photo8.jpg" alt="">
+        </div>
+
+        <div class="photo-card left">
+            <img src="images/photo9.jpg" alt="">
+        </div>
+
+        <div class="photo-card right">
+            <img src="images/photo10.jpg" alt="">
+        </div>
+
+        <div class="photo-card zoom">
+            <img src="images/photo11.jpg" alt="">
+        </div>
+
+        <div class="photo-card rotate">
+            <img src="images/photo12.jpg" alt="">
+        </div>
+
+        <div class="photo-card left">
+            <img src="images/photo13.jpg" alt="">
+        </div>
+
+        <div class="photo-card right">
+            <img src="images/photo14.jpg" alt="">
+        </div>
+
+        <div class="photo-card zoom">
+            <img src="images/photo15.jpg" alt="">
+        </div>
+
+        <div class="photo-card rotate">
+            <img src="images/photo16.jpg" alt="">
+        </div>
+
+        <div class="photo-card left">
+            <img src="images/photo17.jpg" alt="">
+        </div>
+
+    </div>
+    
+<button id="smileBtn">😊 Unlock Final Surprise 😊</button> 
+
+</div>
+<div id="finalPage" class="welcome" style="display:none;">
+
+    <h1>❤️ One Last Message ❤️</h1>
+
+    <p>
+        My Dearest Buggu,<br><br>
+
+        Every moment with you is my favorite memory.
+        Every smile of yours makes my day brighter.
+        Thank you for being my happiness, my peace, and my biggest blessing.
+
+        <br><br>
+
+        No matter where life takes us, I promise that my heart will always choose you.
+
+        <br><br>
+
+        I love you more than words can ever express.
+
+        <br><br>
+
+        ❤️ Forever Yours ❤️
+
+        <br><br>
+
+        <b>— Munmun</b>
+    </p>
+
+    <button id="restartBtn">❤️ Read Again</button>
+
+</div>
+<!-- Heart Burst -->
+<div id="heartBurst"></div>
+
+<audio id="bgMusic" loop>
+    <source src="music/music_love.mp3" type="audio/mpeg">
+</audio>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
