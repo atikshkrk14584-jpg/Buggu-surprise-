@@ -19,9 +19,6 @@ body{
 /* Welcome Card */
 
 .welcome{
-    background:rgba(255,255,255,.95);
-    backdrop-filter:blur(10px);
-    border:1px solid rgba(255,255,255,.6);
     width:90%;
     max-width:420px;
     max-height:90vh;
@@ -29,8 +26,6 @@ body{
     overflow-x:hidden;
     padding:30px;
     text-align:center;
-    border-radius:20px;
-    box-shadow:0 10px 30px rgba(255,105,180,.3);
     position:relative;
     animation:floatCard 4s ease-in-out infinite;
 }
@@ -354,4 +349,19 @@ button:active{
 .gallery-card{
     background: rgba(255,255,255,0.45) !important;
     backdrop-filter: blur(15px);
+} #mainContent,
+#smilePage,
+#finalPage{
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,.6);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(255,105,180,.3);
+}
+
+#galleryPage{
+    background: rgba(255,255,255,0.35);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    box-shadow: none;
 }
