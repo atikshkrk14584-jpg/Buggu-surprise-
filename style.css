@@ -330,27 +330,7 @@ button:active{
     width:100%;
     display:block;
     border-radius:12px;
-}
 
-.photo-card::before,
-.photo-card::after{
-    content:"";
-    position:absolute;
-    width:70px;
-    height:18px;
-    background:rgba(255,240,245,.8);
-    border-radius:4px;
-    top:-8px;
-}
-
-.photo-card::before{
-    left:20px;
-    transform:rotate(-12deg);
-}
-
-.photo-card::after{
-    right:20px;
-    transform:rotate(12deg);
 }
 .photo-card.show{
     opacity:1;
