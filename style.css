@@ -388,54 +388,6 @@ button:active{
     border-radius: 20px;
     box-shadow: none;
 }
-/* ===== Romantic Gallery ===== */
-
-.gallery-card{
-    position:relative;
-    overflow:hidden;
-}
-
-/* Decorations */
-.gallery-card::before{
-    content:"🌸";
-    position:absolute;
-    top:20px;
-    left:20px;
-    font-size:40px;
-    animation:floatFlower 6s ease-in-out infinite;
-}
-
-.gallery-card::after{
-    content:"🦋";
-    position:absolute;
-    top:60px;
-    right:25px;
-    font-size:34px;
-    animation:flyButterfly 8s ease-in-out infinite;
-}
-
-/* Floating sparkles */
-.gallery-card .sparkle{
-    position:absolute;
-    font-size:22px;
-    animation:twinkle 3s infinite;
-    opacity:.8;
-}
-
-@keyframes floatFlower{
-    0%,100%{transform:translateY(0) rotate(0deg);}
-    50%{transform:translateY(-12px) rotate(10deg);}
-}
-
-@keyframes flyButterfly{
-    0%,100%{transform:translate(0,0);}
-    50%{transform:translate(-20px,15px);}
-}
-
-@keyframes twinkle{
-    0%,100%{opacity:.2;transform:scale(.8);}
-    50%{opacity:1;transform:scale(1.3);}
-}
 
 /* Photo Cards */
 .photo-card{
