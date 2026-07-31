@@ -349,3 +349,9 @@ button:active{
 .photo-card.rotate.show{
     transform:rotate(0deg) scale(1);
 }
+
+/* Only Gallery Page */
+.gallery-card{
+    background: rgba(255,255,255,0.45) !important;
+    backdrop-filter: blur(15px);
+}
