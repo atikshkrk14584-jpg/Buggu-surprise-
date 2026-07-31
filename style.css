@@ -387,6 +387,9 @@ button:active{
     backdrop-filter: blur(12px);
     border-radius: 20px;
     box-shadow: none;
+    max-height:90vh;
+    overflow-y:auto;
+    overflow-x:hidden;
 }
 
 /* Photo Cards */
@@ -399,16 +402,6 @@ button:active{
     box-shadow:0 15px 35px rgba(255,105,180,.18);
 }
 
-/* Cute tape */
-.photo-card::before,
-.photo-card::after{
-    content:"";
-    position:absolute;
-    width:70px;
-    height:18px;
-    background:rgba(255,230,240,.75);
-    border-radius:4px;
-}
 
 .photo-card::before{
     top:-8px;
